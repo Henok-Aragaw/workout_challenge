@@ -98,7 +98,6 @@ Ensure public/manifest.json uses "purpose": "any maskable" to avoid browser warn
 3. Build & Deploy
 
 To test the PWA fully (service workers, offline mode), build for production:
-code Bash
 
     
 # Build using Webpack (Required for PWA)
