@@ -2,7 +2,7 @@
 
 A modern, mobile-first workout logger built with Next.js 16+, TypeScript, and Tailwind CSS. Designed to work completely offline as a Progressive Web App (PWA).
 
-![alt text](https://via.placeholder.com/1200x600/09090b/ffffff?text=FitTrack+Pro+Preview)
+![FitTrack Pro Preview](./public/assets/screenshot.png)
 
 
 (Replace this link with a real screenshot of your app)
