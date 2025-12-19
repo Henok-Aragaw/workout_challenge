@@ -1,7 +1,23 @@
-import type { NextConfig } from "next";
+import withPWAInit from "@ducanh2912/next-pwa";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const isDev = process.env.NODE_ENV === "development";
 
-export default nextConfig;
+const withPWA = withPWAInit({
+  dest: "public",
+  disable: false,
+  reloadOnOnline: !isDev,
+  aggressiveFrontEndNavCaching: !isDev,
+  cacheOnFrontEndNav: !isDev,
+  
+  workboxOptions: {
+    // ✅ CHANGE THIS: Set to true to stop the console spam
+    disableDevLogs: true, 
+    exclude: isDev 
+      ? [/middleware-manifest\.json$/, /_next\/static\/development\/.*/, /_next\/static\/webpack\/.*/] 
+      : [],
+  },
+});
+
+export default withPWA({
+  reactStrictMode: true,
+});
