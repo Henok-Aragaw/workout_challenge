@@ -4,8 +4,6 @@ A modern, mobile-first workout logger built with Next.js 16+, TypeScript, and Ta
 
 ![FitTrack Pro Preview](./public/assets/screenshot.png)
 
-
-(Replace this link with a real screenshot of your app)
 ✨ Features
 
     📋 Workout Logging: Track sets, reps, and actual weight lifted.
