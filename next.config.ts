@@ -10,7 +10,6 @@ const withPWA = withPWAInit({
   cacheOnFrontEndNav: !isDev,
   
   workboxOptions: {
-    // ✅ CHANGE THIS: Set to true to stop the console spam
     disableDevLogs: true, 
     exclude: isDev 
       ? [/middleware-manifest\.json$/, /_next\/static\/development\/.*/, /_next\/static\/webpack\/.*/] 
